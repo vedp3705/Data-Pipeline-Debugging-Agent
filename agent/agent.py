@@ -1,6 +1,8 @@
 import json
+import os
 from pathlib import Path
 from openai import OpenAI  # We'll use Gemini via OpenAI-compatible API
+from dotenv import load_dotenv
 import chromadb
 
 # ===== Paths =====
@@ -11,8 +13,10 @@ chroma_client = chromadb.Client()
 collection = chroma_client.get_or_create_collection("pipeline_errors")
 
 # ===== Initialize Gemini Client =====
+load_dotenv()
+API_KEY = os.getenv("API_KEY")
 client = OpenAI(
-    api_key="AIzaSyD11wGTEvpp4aQ8gsj36Auzmcm1y0Uzjb4",
+    api_key=API_KEY,
     base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
 )
 
