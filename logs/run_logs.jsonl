@@ -1,0 +1,5 @@
+{"event": "start", "msg": "Pipeline started"}
+{"stage": "extract", "msg": "Extracting data"}
+{"stage": "transform", "msg": "Transforming data"}
+{"event": "error", "error": "invalid literal for int() with base 10: 'unknown'"}
+{"event": "failed", "msg": "Pipeline failed"}
