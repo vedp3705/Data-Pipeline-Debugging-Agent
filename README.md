@@ -12,6 +12,8 @@ The system reflects emerging design principles in LLM product infrastructure, in
 
 The architecture decomposes into four conceptual layers:
 
+```
+
 +--------------------------------------------------+
 |  User Interface (Dashboard + Agents)             |
 +--------------------------------------------------+
@@ -21,6 +23,7 @@ The architecture decomposes into four conceptual layers:
 +--------------------------------------------------+
 |  Data Ingestion & ETL Pipeline                   |
 +--------------------------------------------------+
+```
 
 Each layer communicates through well-defined interfaces and data artifacts (CSV, Parquet, embeddings, vectors).
 
@@ -29,7 +32,7 @@ Each layer communicates through well-defined interfaces and data artifacts (CSV,
 ## Deployed UI Dashboard
 <img width="782" height="611" alt="82423eeb-4c3f-4efe-a004-ec24df4bd735" src="https://github.com/user-attachments/assets/bd9ce6fc-c5cf-4888-ac0e-da5d84cdc1f9" />
 
-<img width="869" height="570" alt="1466da24-710a-492b-b8bb-987bd72de254" src="https://github.com/user-attachments/assets/a8596a3d-e37f-4de8-832e-f2f29a9fa88f" />
+<img width="757" height="420" alt="86bacd7c-eadf-4e2c-81b5-a327e5b5d14f" src="https://github.com/user-attachments/assets/9f9f6655-d3fc-41ca-968b-bd06faab2576" />
 
 <img width="869" height="570" alt="1466da24-710a-492b-b8bb-987bd72de254" src="https://github.com/user-attachments/assets/3a8b1661-407e-42df-949a-d25cbf84a695" />
 
