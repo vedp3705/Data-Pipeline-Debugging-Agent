@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  db:
+    image: ankane/pgvector
+    container_name: vector_db
+    environment:
+      POSTGRES_USER: debug
+      POSTGRES_PASSWORD: debug
+      POSTGRES_DB: debugdb
+    ports:
+      - "5432:5432"

@@ -3,3 +3,72 @@
 {"stage": "transform", "msg": "Transforming data"}
 {"event": "error", "error": "invalid literal for int() with base 10: 'unknown'"}
 {"event": "failed", "msg": "Pipeline failed"}
+{"event": "start", "msg": "ETL pipeline started", "timestamp": "2026-01-13T21:16:44.662232"}
+{"stage": "extract", "msg": "Extracted CSVs", "timestamp": "2026-01-13T21:16:45.428916"}
+{"event": "error", "error": "'user_id'", "timestamp": "2026-01-13T21:16:45.444422"}
+{"event": "start", "msg": "ETL pipeline started", "timestamp": "2026-01-13T23:15:59.227909+00:00"}
+{"event": "error", "error": "[Errno 2] No such file or directory: 'llm_system_interactions.csv'", "timestamp": "2026-01-13T23:15:59.290577+00:00"}
+{"event": "start", "msg": "ETL pipeline started", "timestamp": "2026-01-13T23:21:02.584047+00:00"}
+{"stage": "extract", "msg": "Extracted CSVs", "timestamp": "2026-01-13T23:21:02.761944+00:00"}
+{"stage": "transform", "msg": "Joined tables", "timestamp": "2026-01-13T23:21:02.861139+00:00"}
+{"stage": "transform", "msg": "Processed 2557 failures", "timestamp": "2026-01-13T23:21:02.880159+00:00"}
+{"stage": "load", "msg": "Saved cleaned ETL output (9000 rows)", "timestamp": "2026-01-13T23:21:03.742802+00:00"}
+{"event": "start", "msg": "ETL pipeline started", "timestamp": "2026-01-14T00:45:26.110032+00:00"}
+{"event": "error", "error": "[Errno 2] No such file or directory: 'data/llm_system_interactions.csv'", "timestamp": "2026-01-14T00:45:26.110539+00:00"}
+{"event": "start", "msg": "ETL pipeline started", "timestamp": "2026-01-15T21:26:08.915322+00:00"}
+{"event": "error", "error": "\"['prompt_text', 'completion_text', 'timestamp'] not in index\"", "timestamp": "2026-01-15T21:26:09.574760+00:00"}
+{"event": "start", "msg": "ETL pipeline started", "timestamp": "2026-01-15T21:27:15.215115+00:00"}
+{"event": "error", "error": "\"['prompt_text', 'completion_text', 'timestamp'] not in index\"", "timestamp": "2026-01-15T21:27:15.375746+00:00"}
+{"event": "start", "msg": "ETL pipeline started", "timestamp": "2026-01-15T21:32:37.140785+00:00"}
+{"stage": "extract", "msg": "Extracted CSVs", "timestamp": "2026-01-15T21:32:37.257425+00:00"}
+{"stage": "transform", "msg": "Joined tables", "timestamp": "2026-01-15T21:32:37.294109+00:00"}
+{"stage": "transform", "msg": "Processed 2557 failures", "timestamp": "2026-01-15T21:32:37.298336+00:00"}
+{"event": "error", "error": "models/text-embedding-004 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`", "timestamp": "2026-01-15T21:32:37.544469+00:00"}
+{"event": "start", "msg": "ETL pipeline started", "timestamp": "2026-01-15T21:38:36.681727+00:00"}
+{"stage": "extract", "msg": "Extracted CSVs", "timestamp": "2026-01-15T21:38:36.804158+00:00"}
+{"stage": "transform", "msg": "Joined tables", "timestamp": "2026-01-15T21:38:36.844554+00:00"}
+{"stage": "transform", "msg": "Processed 2557 failures", "timestamp": "2026-01-15T21:38:36.848506+00:00"}
+{"stage": "rag", "msg": "Stored RAG embeddings (9000 rows)", "timestamp": "2026-01-15T21:40:32.632820+00:00"}
+{"stage": "load", "msg": "Saved cleaned ETL output (9000 rows)", "timestamp": "2026-01-15T21:40:33.454963+00:00"}
+{"event": "start", "msg": "ETL pipeline started", "timestamp": "2026-01-15T21:48:13.764606+00:00"}
+{"stage": "extract", "msg": "Extracted CSVs", "timestamp": "2026-01-15T21:48:13.875081+00:00"}
+{"stage": "transform", "msg": "Joined tables", "timestamp": "2026-01-15T21:48:13.909086+00:00"}
+{"stage": "transform", "msg": "Processed 2557 failures", "timestamp": "2026-01-15T21:48:13.913540+00:00"}
+{"stage": "rag", "msg": "Stored RAG embeddings (9000 rows)", "timestamp": "2026-01-15T21:50:05.676841+00:00"}
+{"stage": "load", "msg": "Saved cleaned ETL output (9000 rows)", "timestamp": "2026-01-15T21:50:06.478541+00:00"}
+{"event": "start", "msg": "ETL pipeline started", "timestamp": "2026-01-15T23:04:10.213248+00:00"}
+{"stage": "extract", "msg": "Extracted CSVs", "timestamp": "2026-01-15T23:04:10.368546+00:00"}
+{"stage": "transform", "msg": "Joined tables", "timestamp": "2026-01-15T23:04:10.401362+00:00"}
+{"stage": "transform", "msg": "Processed 2557 failures", "timestamp": "2026-01-15T23:04:10.405339+00:00"}
+{"event": "error", "error": "models/text-embedding-004 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`", "timestamp": "2026-01-15T23:04:10.646278+00:00"}
+{"event": "start", "msg": "ETL pipeline started", "timestamp": "2026-01-15T23:14:11.811882+00:00"}
+{"stage": "extract", "msg": "Extracted CSVs", "timestamp": "2026-01-15T23:14:11.923969+00:00"}
+{"stage": "transform", "msg": "Joined tables", "timestamp": "2026-01-15T23:14:11.956891+00:00"}
+{"stage": "transform", "msg": "Processed 2557 failures", "timestamp": "2026-01-15T23:14:11.960967+00:00"}
+{"event": "error", "error": "name 'client' is not defined", "timestamp": "2026-01-15T23:14:11.961112+00:00"}
+{"event": "start", "msg": "ETL pipeline started", "timestamp": "2026-01-15T23:14:41.596198+00:00"}
+{"stage": "extract", "msg": "Extracted CSVs", "timestamp": "2026-01-15T23:14:41.708779+00:00"}
+{"stage": "transform", "msg": "Joined tables", "timestamp": "2026-01-15T23:14:41.743688+00:00"}
+{"stage": "transform", "msg": "Processed 2557 failures", "timestamp": "2026-01-15T23:14:41.748374+00:00"}
+{"event": "start", "msg": "ETL pipeline started", "timestamp": "2026-01-15T23:20:12.568009+00:00"}
+{"stage": "extract", "msg": "Extracted CSVs", "timestamp": "2026-01-15T23:20:12.696287+00:00"}
+{"stage": "transform", "msg": "Joined tables", "timestamp": "2026-01-15T23:20:12.734633+00:00"}
+{"stage": "transform", "msg": "Processed 2557 failures", "timestamp": "2026-01-15T23:20:12.738699+00:00"}
+{"event": "start", "msg": "ETL pipeline started", "timestamp": "2026-01-15T23:24:38.388643+00:00"}
+{"stage": "extract", "msg": "Extracted CSVs", "timestamp": "2026-01-15T23:24:38.526766+00:00"}
+{"stage": "transform", "msg": "Joined tables", "timestamp": "2026-01-15T23:24:38.559744+00:00"}
+{"stage": "transform", "msg": "Processed 2557 failures", "timestamp": "2026-01-15T23:24:38.563853+00:00"}
+{"stage": "rag", "msg": "Stored RAG embeddings (9000 rows)", "timestamp": "2026-01-15T23:26:39.365082+00:00"}
+{"stage": "load", "msg": "Saved cleaned ETL output (9000 rows)", "timestamp": "2026-01-15T23:26:40.097340+00:00"}
+{"event": "start", "msg": "ETL pipeline started", "timestamp": "2026-01-15T23:38:43.525698+00:00"}
+{"stage": "extract", "msg": "Extracted CSVs", "timestamp": "2026-01-15T23:38:43.644385+00:00"}
+{"stage": "transform", "msg": "Joined tables", "timestamp": "2026-01-15T23:38:43.679359+00:00"}
+{"stage": "transform", "msg": "Processed 2557 failures", "timestamp": "2026-01-15T23:38:43.683542+00:00"}
+{"stage": "rag", "msg": "Stored RAG embeddings (9000 rows)", "timestamp": "2026-01-15T23:42:23.762712+00:00"}
+{"stage": "load", "msg": "Saved cleaned ETL output (9000 rows)", "timestamp": "2026-01-15T23:42:24.560173+00:00"}
+{"event": "start", "msg": "ETL pipeline started", "timestamp": "2026-01-15T23:48:36.422467+00:00"}
+{"stage": "extract", "msg": "Extracted CSVs", "timestamp": "2026-01-15T23:48:36.535149+00:00"}
+{"stage": "transform", "msg": "Joined tables", "timestamp": "2026-01-15T23:48:36.575397+00:00"}
+{"stage": "transform", "msg": "Processed 2557 failures", "timestamp": "2026-01-15T23:48:36.579625+00:00"}
+{"stage": "rag", "msg": "Stored RAG embeddings (9000 rows)", "timestamp": "2026-01-15T23:52:15.192851+00:00"}
+{"stage": "load", "msg": "Saved cleaned ETL output (9000 rows)", "timestamp": "2026-01-15T23:52:16.024435+00:00"}
