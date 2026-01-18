@@ -1,0 +1,10 @@
+streamlit
+pandas
+numpy
+psycopg2-binary
+openai
+python-dotenv
+scikit-learn
+umap-learn
+matplotlib
+tqdm
