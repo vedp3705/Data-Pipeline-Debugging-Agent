@@ -25,6 +25,9 @@ The architecture decomposes into four conceptual layers:
 +--------------------------------------------------+
 ```
 
+<img width="647" height="386" alt="mermaid-diagram-2026-01-18-153427-removebg-preview" src="https://github.com/user-attachments/assets/fdc4217e-5c92-40fc-b32b-3bd425b88d32" />
+
+
 Each layer communicates through well-defined interfaces and data artifacts (CSV, Parquet, embeddings, vectors).
 
 ---
