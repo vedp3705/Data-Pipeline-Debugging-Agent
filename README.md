@@ -34,8 +34,6 @@ Each layer communicates through well-defined interfaces and data artifacts (CSV,
 
 <img width="757" height="420" alt="86bacd7c-eadf-4e2c-81b5-a327e5b5d14f" src="https://github.com/user-attachments/assets/9f9f6655-d3fc-41ca-968b-bd06faab2576" />
 
-<img width="869" height="570" alt="1466da24-710a-492b-b8bb-987bd72de254" src="https://github.com/user-attachments/assets/3a8b1661-407e-42df-949a-d25cbf84a695" />
-
 <img width="794" height="518" alt="d6effb3f-14c8-4213-a112-d99fcdb3c4af" src="https://github.com/user-attachments/assets/6ae1c506-82f8-4885-84c8-f334013aa957" />
 
 <img width="268" height="391" alt="0cf6cbb0-5028-4214-9a08-9619015bc8c4" src="https://github.com/user-attachments/assets/a598999b-2f3d-455e-bd14-5237538f5d2c" />
