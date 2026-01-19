@@ -116,7 +116,7 @@ Each layer communicates through well-defined interfaces and data artifacts (CSV,
 
 <img width="350" height="400" alt="0cf6cbb0-5028-4214-9a08-9619015bc8c4" src="https://github.com/user-attachments/assets/a598999b-2f3d-455e-bd14-5237538f5d2c" />
 
-<img width="350" height="700" alt="75a67b8d-fe61-48fd-bba9-3d7eb6222a53" src="https://github.com/user-attachments/assets/f2a24efa-3395-4d63-b8bb-83f761562521" />
+<img width="400" height="750" alt="75a67b8d-fe61-48fd-bba9-3d7eb6222a53" src="https://github.com/user-attachments/assets/f2a24efa-3395-4d63-b8bb-83f761562521" />
 
 ## Data Ingestion and ETL Pipeline
 
