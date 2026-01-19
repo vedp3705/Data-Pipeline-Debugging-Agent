@@ -27,7 +27,79 @@ The architecture decomposes into four conceptual layers:
 
 
 ```mermaid
-[![](https://mermaid.ink/img/pako:eNptVV1z6jYQ_Ssad-jkTkmKbCcEZtoZYr7SJoGG5D5U9EHYi9HElhhZvjckw3_v2sJgILzg1Tn7odVZ6dMJVQRO12k0PoUUpks-55KQuWNWkMLc6eLngmf41aytf-da8EUCWUEoHUjJC99irXIZWT8dLy6o36Ttput-2wUoeGstUq43gUqUtsxf6NLteO1zzgu8mzoPrqENixovERLqhE7IPb6sETIIlYxO01F669bTLZU0Q56KZGMZ99KAbpIebjOZOwVrO5fbbaMxl8tE_QxXXBvy0p9LG6DRIH8UPzJ4Rz_JE9LnhpOZynUImcUss0fZM_9Jyvg8NEJJ8qDi7L8d6rJeDNKQKeil0imXIZBHMFqEe4rHgjwzKgVN_slBC4z_K5lBlmGsPclnQy6SXANigyzkCS9TTXITomdBOyn8XsaQ2XL4BkPXSr6jDEsk2L8EQqP0Lsedy6Ya1lrhDrPDqseGwE2RGXtRbLGETrLNsH8Q2SbVMgXs4lWKpaigB_4G33aB--yih43dGIG7IVWOGYYvKScJggR7hNuw3aylGFA2dwKVrnODFaYLiCIh42wuL6ZBj_xGXh97U9TqLunAZc-5JH8_ApcZ-Z2M-3ezoPdUoR574AtIqmxftPWZyzeMf17HkGL3hNLCbMgsxH8kDXNZKqI6xSGqYb1OkCA-gBhFqjOd6AgKj4rnsUfxjk07RMTOG4jF1yediXhlcK9PXCNN_IDz8kaUVS2cAcrQHAQ4cvfaKlW81mBKdVW4xw6Bn2GtcFJGIEFXpJN6-jxbLRTXEfb39f68lDFlM9AY66W8cVDQQTF9VTljdwcXJ4chimOcJuqA47wkoohZVrvkOFG96f15HTgbKIqjYZ1Qth9UzLCvdBd64rK_ZpOnvdhwUHmEuq1gj9Vq-i6ynCfig9dPeOKzmqhts74Qs5ISrDKOrxJyefknjmd1dxyb3rHp781qqu3Czsuyg90clsb-duuX5sA6DKzDwKtmoDSHFhxacOhVwizNkQVHFhx5lU5Kc2zBsQXHXpV0bOEJPWJP_KO0E7eaU2t6TtOJtYicrtE5NB28JFNemM75q4ZvwltxtW_RZ83lv0qllRu-YfHK6S55kqGVr_FQoS94rHm6X9UgcQgDfO2M06W-55dRnO6n8-50Xc-9avvtG89td1qdTuu26Wyc7iXSrmjHb7Xc9k2Hep3bbdP5KPPSq1uPUv_ad1vXN75P2972fy1LPcY?type=png)](https://mermaid.live/edit#pako:eNptVV1z6jYQ_Ssad-jkTkmKbCcEZtoZYr7SJoGG5D5U9EHYi9HElhhZvjckw3_v2sJgILzg1Tn7odVZ6dMJVQRO12k0PoUUpks-55KQuWNWkMLc6eLngmf41aytf-da8EUCWUEoHUjJC99irXIZWT8dLy6o36Ttput-2wUoeGstUq43gUqUtsxf6NLteO1zzgu8mzoPrqENixovERLqhE7IPb6sETIIlYxO01F669bTLZU0Q56KZGMZ99KAbpIebjOZOwVrO5fbbaMxl8tE_QxXXBvy0p9LG6DRIH8UPzJ4Rz_JE9LnhpOZynUImcUss0fZM_9Jyvg8NEJJ8qDi7L8d6rJeDNKQKeil0imXIZBHMFqEe4rHgjwzKgVN_slBC4z_K5lBlmGsPclnQy6SXANigyzkCS9TTXITomdBOyn8XsaQ2XL4BkPXSr6jDEsk2L8EQqP0Lsedy6Ya1lrhDrPDqseGwE2RGXtRbLGETrLNsH8Q2SbVMgXs4lWKpaigB_4G33aB--yih43dGIG7IVWOGYYvKScJggR7hNuw3aylGFA2dwKVrnODFaYLiCIh42wuL6ZBj_xGXh97U9TqLunAZc-5JH8_ApcZ-Z2M-3ezoPdUoR574AtIqmxftPWZyzeMf17HkGL3hNLCbMgsxH8kDXNZKqI6xSGqYb1OkCA-gBhFqjOd6AgKj4rnsUfxjk07RMTOG4jF1yediXhlcK9PXCNN_IDz8kaUVS2cAcrQHAQ4cvfaKlW81mBKdVW4xw6Bn2GtcFJGIEFXpJN6-jxbLRTXEfb39f68lDFlM9AY66W8cVDQQTF9VTljdwcXJ4chimOcJuqA47wkoohZVrvkOFG96f15HTgbKIqjYZ1Qth9UzLCvdBd64rK_ZpOnvdhwUHmEuq1gj9Vq-i6ynCfig9dPeOKzmqhts74Qs5ISrDKOrxJyefknjmd1dxyb3rHp781qqu3Czsuyg90clsb-duuX5sA6DKzDwKtmoDSHFhxacOhVwizNkQVHFhx5lU5Kc2zBsQXHXpV0bOEJPWJP_KO0E7eaU2t6TtOJtYicrtE5NB28JFNemM75q4ZvwltxtW_RZ83lv0qllRu-YfHK6S55kqGVr_FQoS94rHm6X9UgcQgDfO2M06W-55dRnO6n8-50Xc-9avvtG89td1qdTuu26Wyc7iXSrmjHb7Xc9k2Hep3bbdP5KPPSq1uPUv_ad1vXN75P2972fy1LPcY)
+%%{init: {
+  "theme": "base",
+  "themeVariables": {
+    "background": "rgb(14,17,22)",
+    "primaryColor": "#1f2937",
+    "primaryTextColor": "#e5e7eb",
+    "lineColor": "#9ca3af",
+    "secondaryColor": "#111827",
+    "fontFamily": "Inter, Arial"
+  }
+}}%%
+flowchart TD
+
+    %% ===== External Data Sources =====
+    A1[Raw Interaction Logs]
+    A2[Agent Performance Metrics]
+    A3[Customer Queries & Sessions]
+    A4[Failure & Escalation Outcomes]
+
+    %% ===== Ingestion Layer =====
+    B1[Log Collector]
+    B2[Preprocessor]
+    B3[Feature Extractor]
+
+    %% ===== Shared Data =====
+    C[(Unified Data Lake)]
+    D[(Analytical Feature Store)]
+
+    %% ===== Cluster Agent =====
+    E1["Compute Embeddings
+(PCA + UMAP)"]
+    E2[Run KMeans / HDBSCAN]
+    E3[Label Clusters]
+
+    %% ===== Ranking Agent =====
+    F1[Priority Scoring Functions]
+    F2[Apply Size to Failure Ordering]
+    F3[Mixed Priority Strategies]
+
+    %% ===== Insight + Narrative Agent =====
+    G1[Cluster Semantics]
+    G2[Failure Interpretation]
+    G3[Narrative Report Generation]
+
+    %% ===== Dashboard / UI Agent =====
+    H1[Serve Tables & Charts]
+    H2[Serve UMAP / PCA Plots]
+    H3[Client Interface API]
+
+    %% ===== Outputs =====
+    O1[Interactive Dashboard]
+    O2[JSON Cluster Metadata]
+    O3[UMAP / PCA Visualizations]
+    O4[Analytical Report]
+
+    %% ===== Connections =====
+    A1 --> B1
+    A2 --> B1
+    A3 --> B1
+    A4 --> B1
+
+    B1 --> B2 --> B3 --> C
+    C --> D
+
+    D --> E1 --> E2 --> E3
+    E3 --> F1 --> F2 --> F3
+    F3 --> G1 --> G2 --> G3
+    G3 --> H1 --> H2 --> H3
+
+    H3 --> O1
+    G3 --> O4
+    E3 --> O2
+    E2 --> O3
 ```
 
 
